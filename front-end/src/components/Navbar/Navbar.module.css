@@ -1,0 +1,123 @@
+.navbarStyle{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(222, 231, 231, 0.555);
+}
+
+.logo{
+    width: 20%;
+}
+
+.imgLogo{
+    width: 250px;
+    cursor: pointer;
+}
+
+.links{
+    width: 40%;
+    text-align: right;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   gap: 50px;
+}
+
+.elementLink , .elementLinkDown{
+    color: #023058;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease-in;
+}
+
+.elementLink:hover{
+    transform: scale(1.05);
+    text-shadow: 10px 5px 5px #023058;
+}
+
+.elementLinkDown{
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.elementLinkDown:hover{
+    background-color: rgb(213, 230, 230);
+    margin-right: 8px;
+}
+
+/* .elementLink::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #023058;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+.elementLink:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+
+.navToggle{
+    color: #023058;
+    font-size: 27px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbarDown{
+    width: 200px;
+    position: absolute;
+    right: 40px;
+   text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(222, 231, 231, 0.938);
+    padding: 20px;
+    gap: 20px;
+}
+
+.linksDown{
+    display: none;
+}
+
+.languageButton{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #023058;
+    color: #fff;
+    text-align: center;
+}
+
+
+@media (max-width:940px) {
+    .links .elementLink{
+        display: none;
+    }
+
+    .linksDown{
+        display: block;
+    }
+
+}
